@@ -1,0 +1,602 @@
+* {
+    font-family: "Poppins", sans-serif;
+}
+
+p {
+    text-align: center;
+}
+
+.navbar.color-active {
+    background-color: #212529;
+    transform: scaleY(1);
+    -webkit-transform: scaleY(1);
+    -moz-transform: scaleY(1);
+    -ms-transform: scaleY(1);
+    -o-transform: scaleY(1);
+    padding: 15px 0 15px 0;
+}
+
+.hero {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url("../assets/img/gallery/gallery-2.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding-top: 100px;
+    padding-bottom: 0;
+    height: 30vh;
+}
+
+.hero h1 {
+    font-size: 50px;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+.hero p {
+    --animate-delay: 0.2s;
+}
+
+.gallery img {
+    height: 290px;
+}
+
+.gallery-card .card-text{
+    text-align: justify;
+}
+
+.gallery-card .card-title{
+    text-align: center;
+}
+
+.faq {
+    padding-bottom: 150px;
+}
+
+.faq .accordion {
+    --bs-accordion-bg: #f1faee;
+}
+
+.faq .accordion .accordion-item .accordion-header {
+    line-height: 2;
+}
+
+.faq .accordion .accordion-button:focus {
+    box-shadow: none;
+}
+
+.footer {
+    background-color: #212529;
+    margin-top: 0;
+    padding-top: 20px;
+}
+
+.footer .row:nth-child(2) {
+    padding-top: 50px;
+}
+
+@media screen and (max-width: 992px) {
+    .services {
+        padding-top: 100px;
+    }
+}
+
+.carousel-item img {
+    width: 300%;
+    height: 830px;
+    object-fit: cover;
+}
+
+.carousel-caption {
+    font-size: 2rem;
+    top: 60%;
+    transform: translateY(-50%);
+    bottom: initial;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+    color: #ffffff;
+    font-family: "Poppins", sans-serif;
+    font-weight: bold;
+}
+
+.carousel-caption h3 {
+    font-size: 3rem;
+    margin-bottom: 10px;
+}
+
+.carousel-caption p {
+    font-size: 1.5rem;
+    margin-top: 5px;
+    line-height: 1.8;
+}
+
+/* Navbar Styles */
+.navbar-brand h4 {
+    font-size: 12px;
+    color: #b2bab8;
+    margin: 0;
+    font-weight: 300;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.brand-left {
+    position: absolute;
+    left: 0;
+    padding-left: 50px;
+    margin: 8px;
+}
+
+/* Navbar Collapse */
+.navbar-collapse {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+/* Gaya untuk Nav */
+.navbar .nav {
+    gap: 10px;
+}
+
+.navbar .nav-link {
+    color: #ffffff;
+    font-size: 1rem;
+    font-weight: 500;
+    padding: 10px 15px;
+    transition: color 0.3s ease, background-color 0.3s ease;
+    border-radius: 5px;
+}
+
+/* Hover Efek */
+.navbar .nav-link:hover {
+    color: #ffffff; /* Warna teks saat hover (tetap putih) */
+    background-color: #051eff; /* Ganti warna latar belakang saat hover */
+    text-decoration: none;
+}
+
+/* Responsivitas untuk layar kecil */
+@media (max-width: 768px) {
+    .navbar-collapse {
+        justify-content: flex-start;
+    }
+
+    .nav-link {
+        padding: 10px;
+        font-size: 0.9rem;
+    }
+}
+
+/* Footer Styles */
+.footer {
+    background-color: #212529;
+    color: #ffffff;
+    padding: 40px 20px;
+    position: relative;
+}
+
+.footer h3 {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #ffffff;
+    margin-bottom: 10px;
+}
+
+.footer p {
+    font-size: 0.9rem;
+    color: #d3d3d3;
+    margin: 0;
+}
+
+.footer i {
+    transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.footer i:hover {
+    transform: scale(1.2);
+    color: #17a2b8;
+}
+
+.footer .row:first-child {
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.footer .row:nth-child(2) {
+    border-top: 1px solid rgba(255, 255, 255, 0.2);
+    padding-top: 20px;
+}
+
+@media (max-width: 768px) {
+    .footer h3 {
+        font-size: 1.5rem;
+    }
+
+    .footer .text-end {
+        text-align: center !important;
+        margin-top: 15px;
+    }
+}
+
+@media (max-width: 576px) {
+    .footer p {
+        font-size: 0.8rem;
+    }
+
+    .footer i {
+        font-size: 1.5rem;
+    }
+}
+
+/* Button Styles */
+.button-add {
+    background-color: #4CAF50;
+    border: none;
+    color: white;
+    padding: 12px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 10px 2px;
+    border-radius: 5px;
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+.button-add:hover {
+    background-color: #45a049;
+    transform: scale(1.05);
+}
+
+.button-add:active {
+    transform: scale(0.95);
+}
+
+/* Action Buttons */
+.action-buttons {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+}
+
+.btn-edit {
+    background-color: #ffc107;
+    border-color: #ffc107;
+    color: #212529;
+    transition: all 0.3s ease;
+}
+
+.btn-edit:hover {
+    background-color: #e0a800;
+    border-color: #d39e00;
+}
+
+.btn-delete {
+    background-color: #dc3545;
+    border-color: #dc3545;
+    color: white;
+    transition: all 0.3s ease;
+}
+
+.btn-delete:hover {
+    background-color: #c82333;
+    border-color: #bd2130;
+}
+
+.mt-5{
+    text-align: center;
+}
+
+h4, h5{
+    text-align: center;
+}
+
+.justify-text p{
+    text-align: center;
+}
+
+.center-list {
+    display: inline-block;
+    text-align: center;
+}
+
+btn{
+    text-align: center;
+}
+
+
+
+/* General pringkat */
+
+  
+
+  
+  .title {
+    text-align: center;
+    font-size: 36px;
+    margin-bottom: 20px;
+    color: #333;
+  }
+  
+  /* .btn {
+    display: block;
+    width: 200px;
+    padding: 10px;
+    font-size: 16px;
+    margin: 0 auto;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+   */
+  .btn:hover {
+    background-color: #0056b3;
+  }
+  
+  .results {
+    margin-top: 30px;
+  }
+  
+  .result-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+  }
+  
+  .result-table th,
+  .result-table td {
+    padding: 12px;
+    text-align: center;
+    border: 1px solid #ddd;
+  }
+  
+  .result-table th {
+    background-color: #f8f9fa;
+    color: #333;
+  }
+  
+  .steps {
+    margin-top: 40px;
+    background-color: #f8f9fa;
+    padding: 20px;
+    border-radius: 5px;
+  }
+  
+  pre {
+    background-color: #e9ecef;
+    padding: 10px;
+    border-radius: 5px;
+    font-size: 14px;
+    white-space: pre-wrap;
+    word-wrap: break-word;
+  }
+  
+  .loading {
+    text-align: center;
+    font-size: 24px;
+    padding: 50px;
+    background-color: #f4f4f9;
+  }
+  
+  @media screen and (max-width: 768px) {
+    .container {
+      padding: 10px;
+    }
+    .btn {
+      width: 100%;
+    }
+  }
+  
+
+
+
+
+
+/* Mengatur gaya umum tabel */
+.table-Z {
+    width: 60%; /* Tabel hanya mengambil 60% dari lebar layar */
+    margin: 20px auto; /* Memberikan margin di atas, bawah, dan meratakan tabel di tengah */
+    border-collapse: collapse;
+    font-family: 'Arial', sans-serif;
+    background-color: #f9f9f9; /* Warna latar belakang tabel */
+    border-radius: 8px; /* Sudut yang lebih halus */
+    overflow: hidden;
+}
+
+/* Gaya untuk header tabel */
+.table-Z thead {
+    background-color: #4c89af; /* Warna latar belakang header */
+    color: white;
+}
+
+.table-Z thead th {
+    text-align: center;
+    padding: 12px;
+    font-size: 1.1rem;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+/* Gaya untuk sel tabel */
+.table-Z tbody td {
+    text-align: center;
+    padding: 10px; /* Mengurangi padding agar lebih kecil */
+    border-bottom: 1px solid #ddd; /* Garis bawah setiap sel */
+    font-size: 0.95rem; /* Ukuran font lebih kecil */
+    color: #333;
+}
+
+/* Gaya baris saat dihover */
+.table-Z tbody tr:hover {
+    background-color: #f1f1f1; /* Warna latar belakang saat hover */
+    cursor: pointer;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Efek bayangan saat hover */
+}
+
+/* Menambahkan border pada baris */
+.table-Z tbody tr {
+    border-bottom: 1px solid #ddd;
+}
+
+/* Gaya untuk kolom yang berisi harga dan rating (lebih menonjol) */
+/* .table-Z tbody td:nth-child(5),
+.table-Z tbody td:nth-child(6) {
+    font-weight: bold;
+    color: #2e8b57; 
+} */
+
+/* Membuat tabel responsif */
+@media (max-width: 768px) {
+    .table-Z {
+        font-size: 0.9rem;
+        width: 80%; /* Mengurangi lebar tabel pada layar kecil */
+    }
+
+    .table-Z thead th, 
+    .table-Z tbody td {
+        padding: 8px; /* Mengurangi padding saat layar kecil */
+    }
+}
+
+
+
+/* Mengatur gaya untuk komponen NormalizedMatrix */
+.normalized-matrix-container {
+    width: 70%; /* Membuat komponen hanya mengambil 70% dari lebar layar */
+    margin: 20px auto; /* Memberikan margin atas dan bawah, dan meratakan di tengah */
+    padding: 20px; /* Menambahkan padding di sekitar konten */
+    background-color: #fff; /* Warna latar belakang putih */
+    border-radius: 8px; /* Sudut yang lebih halus */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Menambahkan bayangan ringan */
+    font-family: 'Arial', sans-serif;
+}
+
+/* Gaya untuk judul */
+.normalized-matrix-container h2 {
+    text-align: center;
+    font-size: 1.5rem;
+    /* color: #191a19;  */
+    margin-bottom: 20px; /* Memberikan jarak antara judul dan konten */
+}
+
+/* Gaya untuk teks JSON yang ditampilkan */
+.normalized-matrix-container pre {
+    background-color: #f4f4f4; /* Warna latar belakang untuk JSON */
+    padding: 15px; /* Padding untuk memberikan ruang pada teks */
+    border-radius: 5px; /* Sudut yang lebih halus pada area JSON */
+    font-size: 0.9rem; /* Ukuran font sedikit lebih kecil */
+    white-space: pre-wrap; /* Membungkus teks JSON jika terlalu panjang */
+    word-wrap: break-word; /* Memecah kata panjang agar tidak keluar dari area */
+    color: #333; /* Warna teks */
+}
+
+/* Responsif untuk perangkat lebih kecil */
+@media (max-width: 768px) {
+    .normalized-matrix-container {
+        width: 90%; /* Mengurangi lebar komponen menjadi 90% pada layar kecil */
+        padding: 15px; /* Mengurangi padding untuk perangkat mobile */
+    }
+
+    .normalized-matrix-container h2 {
+        font-size: 1.2rem; /* Mengurangi ukuran font judul pada perangkat mobile */
+    }
+
+    .normalized-matrix-container pre {
+        font-size: 0.8rem; /* Mengurangi ukuran font teks JSON pada perangkat mobile */
+    }
+}
+
+
+
+
+/* Gaya untuk elemen h2 */
+h2 {
+    text-align: center; /* Menyelaraskan teks ke tengah secara horizontal */
+    font-size: 1.8rem; /* Ukuran font dapat disesuaikan */
+    font-weight: bold; /* Menebalkan font */
+    color: #4CAF50; /* Warna hijau untuk teks */
+    margin-top: 20px; /* Memberikan jarak atas */
+    margin-bottom: 20px; /* Memberikan jarak bawah */
+}
+
+/* Responsif untuk perangkat lebih kecil */
+@media (max-width: 768px) {
+    h2 {
+        font-size: 1.5rem; /* Ukuran font lebih kecil untuk perangkat mobile */
+    }
+}
+
+
+
+/* Gaya untuk elemen h1 */
+h1 {
+    text-align: center; /* Menyelaraskan teks ke tengah secara horizontal */
+    font-size: 2.5rem; /* Ukuran font yang besar untuk judul */
+    font-weight: bold; /* Menebalkan font */
+    color: #2e8b57; /* Warna hijau */
+    margin-top: 50px; /* Memberikan jarak atas */
+    margin-bottom: 20px; /* Memberikan jarak bawah */
+}
+
+/* Responsif untuk perangkat lebih kecil */
+@media (max-width: 768px) {
+    h1 {
+        font-size: 2rem; /* Mengurangi ukuran font pada perangkat mobile */
+    }
+}
+
+
+.scroll-to-top {
+    position: fixed;
+    bottom: 30px;
+    right: 200px;
+    cursor: pointer;
+    background: black;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 24px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease, opacity 0.3s ease;
+    opacity: 1;
+  }
+  
+  .scroll-to-top:hover {
+    background: darkblue;
+    transform: scale(1.1);
+  }
+  
+  .scroll-to-top.hidden {
+    opacity: 0;
+    pointer-events: none;
+  }
+
+
+  .btn-1 {
+    background-color: #007bff; 
+    color: white;
+    border: none; 
+    padding: 5px 5px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s ease; 
+  }
+  
+  .btn-1:hover {
+    background-color: #2463a7; 
+  }
+  
+
+  .paragraf-1{
+    text-align: justify;
+  }
+
+
